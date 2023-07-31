@@ -30,9 +30,21 @@
   }
 
   #goTopBtn:hover{
-    background-color: white;
     cursor: pointer;
   }
+
+  #goTopBtn {
+    transition: transform 0.5s;
+  }
+  
+  #goTopBtn:hover {
+    transform: scale(1.2);
+  }
+  
+  #goTopBtn:not(:hover) {
+    transform: scale(1);
+  }
+
   
   .giticon {
     transition: transform 0.5s;
