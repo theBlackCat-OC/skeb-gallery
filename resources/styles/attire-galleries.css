@@ -4,6 +4,7 @@
   object-position: center;
   max-width: 100%;
   max-height: 100%;
+  border-radius: 16px;
 }
 
 /* Gallery styles */
@@ -18,6 +19,12 @@
   max-width: 100%;
   box-sizing: border-box; /* Include padding and border in the width calculation */
   border-radius: 16px;
+  flex-grow: 1;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
 }
 
 #galleries {
@@ -33,7 +40,7 @@
 /* When two or more galleries are visible, they occupy 48% of the width each */
 @media screen and (min-width: 768px) {
   .gallery {
-    width: 48%;
+    width: 45%;
   }
 }
 
@@ -62,11 +69,12 @@
 }
 
 .thumbnails-container img:hover {
-  border-color: #2ac955; /* Change the border color on hover */
+  border-color: #d3f1db; /* Change the border color on hover */
+  background-color: white;
 }
 
 .gallery-title {
-  font-family: 'notosans';
+  font-family: 'sanfrancisco';
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -99,7 +107,7 @@
   -webkit-backdrop-filter: blur(3.1px);
   z-index: 4;
   border-radius: 15px;
-  font-family: 'notosans', 'sans-serif';
+  font-family: 'sanfrancisco', 'sans-serif';
   border: 1px solid black;
   cursor: default;
 }
