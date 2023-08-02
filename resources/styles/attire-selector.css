@@ -1,6 +1,7 @@
 .tag-container-parent {
     max-width: 75vw;
     margin: 20px auto;
+    position: relative;
 }
 
 .tag-container {
@@ -143,8 +144,8 @@
 
 .bubble-trigger-gallery {
     position: absolute;
-    top: 1vh;
-    left: 1vw;
+    top: -1vh;
+    left: -1vw;
     padding: 10px;
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -158,8 +159,8 @@
   
   .bubble-gallery {
     position: absolute;
-    top: 1.5vh;
-    left: 1.5vw;
+    top: -0.4vh;
+    left: -0.4vw;
     display: none;
     font-size: 0.9em;
     padding: 10px;
