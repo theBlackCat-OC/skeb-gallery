@@ -92,22 +92,6 @@ body{
     z-index: 9;
   }
   
-  .butwhy-button {
-    display: inline-block;
-    top: 10px;
-    right: 10px;
-    padding: 5px 10px;
-    background-color: #d3d3d3;
-    color: #ffffff;
-    font-size: 0.6em;
-    font-family: 'productsanslight', serif;
-    margin-top: 0.5vh;
-  }
-
-  .butwhy-button:hover{
-    font-size: 1em;
-    transition: 0.5s;
-  }
   
   h1, h2, h3{
     font-family: 'productsanslight', sans-serif;

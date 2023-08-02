@@ -50,3 +50,26 @@
     opacity: 1;
   }
   
+  .butwhy-button {
+    display: inline-block;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.1px);
+    -webkit-backdrop-filter: blur(3.1px);
+    color: black;
+    font-size: 0.6em;
+    font-family: 'productsanslight', serif;
+    margin-top: 0.5vh;
+  }
+
+  .butwhy-button img{
+    vertical-align: -6px;
+  }
+
+  .butwhy-button:hover{
+    font-size: 1em;
+    transition: 0.5s;
+  }
