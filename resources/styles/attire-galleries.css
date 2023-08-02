@@ -1,9 +1,8 @@
 .gallery img {
   cursor: pointer;
-  object-fit: cover; /* Change 'cover' to 'contain' to prevent cropping */
+  object-fit: contain; /* Change 'cover' to 'contain' to prevent cropping */
   object-position: center;
   max-width: 100%;
-  max-height: 100%;
   border-radius: 16px;
 }
 
@@ -20,11 +19,27 @@
   box-sizing: border-box; /* Include padding and border in the width calculation */
   border-radius: 16px;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
+
+.large-image-container {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  height: 70vh; /* Set a fixed height to the container */
+  overflow: hidden; /* Hide any overflow if the image is too tall */
+}
+
 
 .gallery-container {
   display: flex;
   flex-direction: column;
+}
+
+.gallery.zoomed-gallery {
+  flex-wrap: nowrap;
 }
 
 #galleries {
@@ -33,35 +48,30 @@
   justify-content: center; /* Center the galleries horizontally */
 }
 
-.gallery {
-  width: 100%; /* Occupies full width initially */
-}
-
-/* When two or more galleries are visible, they occupy 48% of the width each */
-@media screen and (min-width: 768px) {
-  .gallery {
-    width: 45%;
-  }
-}
-
 .large-image-container img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-  margin-bottom: 10px;
+  height: 100%; /* Make the image fill the container's height */
+  max-width: 100%; /* Ensure the image doesn't exceed the container's width */
 }
 
 .thumbnails-container {
+  margin-top: 2vh;
   display: flex;
-  justify-content: flex-start; /* Align thumbnails to the left */
+  justify-content: center; /* Align thumbnails to the left */
   align-items: center;
   overflow-x: auto; /* Add horizontal scroll when necessary */
   min-width: 100%; /* Ensure thumbnails don't clip, and the scroll will appear if necessary */
+  align-self: flex-end;
+  border: 1px solid black;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.1px);
+  -webkit-backdrop-filter: blur(3.1px);
 }
 
 .thumbnails-container img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   margin: 5px;
   cursor: pointer;
   border: 2px solid transparent;
@@ -69,7 +79,7 @@
 }
 
 .thumbnails-container img:hover {
-  border-color: #d3f1db; /* Change the border color on hover */
+  border-color: #8425ff; /* Change the border color on hover */
   background-color: white;
 }
 
