@@ -28,7 +28,6 @@
   display: flex;
   justify-content: center; /* Center the image horizontally */
   align-items: center; /* Center the image vertically */
-  height: 70vh; /* Set a fixed height to the container */
   overflow: hidden; /* Hide any overflow if the image is too tall */
 }
 
