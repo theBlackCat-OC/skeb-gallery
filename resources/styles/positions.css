@@ -63,8 +63,25 @@
 .vertical-align-1vh{
     vertical-align: 1vh;
 }
+
+.vertical-align-minus1vh{
+    vertical-align: -1vh;
+}
+
+.vertical-align-minus1dot5vh{
+    vertical-align: -1.5vh;
+}
+
+.vertical-align-minus2vh{
+    vertical-align: -2vh;
+}
+
 .vertical-align-1dot1vh{
     vertical-align: 1.1vh;
+}
+
+.vertical-align-minus1dot1vh{
+    vertical-align: -1.1vh;
 }
 
 .vertical-align-0dot1vh{
