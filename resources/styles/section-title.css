@@ -23,7 +23,20 @@
     .section-title-long{
         margin-right: 20%;
         margin-left: 20%;
+    }
 }
+
+.gdrive-button{
+    transition: transform 0.5s;
+}
+
+.gdrive-button:hover {
+   transform: scale(0.9);
+   z-index: 1;
+}
+  
+.gdrive-button:not(:hover) {
+   transform: scale(0.8);
 }
 
   .section-title-two{

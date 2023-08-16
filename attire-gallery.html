@@ -33,22 +33,22 @@
     <title>服装 - 黒猫のボディ・リファレンス・ギャラリー</title>
 </head>
 <body class="loading-animation">
-    <!-- ~~~~ Comm Works Title ~~~~ -->
-    <div class="gallery-title-two glassbox-25 border-radius-8px">
-      <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/attire.png" width="28" height="28" class="vertical-align-0dot4vh marginright-1percent img-inverter">
-      <span class="notosans onepointfive-em description-text-black cursor-pointer" id="commworks-topBar">-&nbsp;服装ギャラリー&nbsp;|&nbsp;黒猫</span></div>
+    <!-- ~~~~ Attire Gallery Title ~~~~ -->
+    <div class="gallery-title-two glassbox-25 border-radius-8px user-select-none">
+      <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/attire.png" width="23" height="23" class="img-inverter">
+        <span class="notosans onepointfive-em description-text-black cursor-default" id="commworks-topBar">-&nbsp;服装ギャラリー&nbsp;-&nbsp;"黒猫"</span></div>
     <div>
     <!-- ~~~~ Quick Google Drive Download ~~~~ -->
- <div class="gallery-title-two glassbox-10 border-radius-5px">
-      <a href="https://drive.google.com/drive/folders/1K-FQ2PfoNG9M1YeGzKJPGrv5uKqa649W?usp=drive_link" target="_blank"><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/colordrive.svg" width="20" height="20" class="vertical-align-0dot7vh marginright-1percent">
+    <div class="gallery-title-two glassbox-10 border-radius-5px cursor-pointer gdrive-button user-select-none" id="gdrive-folder" title="クイックアクセス： すべての参考文献を含むGoogle Driveフォルダ">
+      <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/colordrive.svg" width="20" height="20" class="vertical-align-0dot7vh marginright-1percent">
       <span class="notosans description-text-black">クイックアクセス： すべての参考文献を含む<span class="productsans-light">Google Drive</span>フォルダ</span>
       </a>
   </div>
     <!-- ~~~~ -->
-    <div class="bubble-trigger">
+    <div class="bubble-trigger cursor-help">
       <img src="https://cdn.theblack.cat/resources/thank-you-flaticons/tip.png" width="32" height="32">
     </div>
-    <div class="bubble user-select-none description-text-black">
+    <div class="bubble user-select-none description-text-black cursor-help">
       <span>●&nbsp;ボディパーツのタグをクリックすると、ギャラリーが表示されます。ギャラリーの中には複数のギャラリーがあるものもあります。</span>
       <span><br>●&nbsp;ギャラリーカードの下までスクロールすると、サムネイルをクリックしてより多くの画像を閲覧することができます。</span>
       <span><br>●&nbsp;各ギャラリーの<span class="productsans-light"> Google Drive </span>フォルダは、<img src="https://cdn.theblack.cat/resources/thank-you-flaticons/colordrive.svg" width="19" height="19" style="right:1px";>をクリックして確認します。</span>
@@ -78,8 +78,10 @@
  <script src="resources/scripts/hideGoToTopBTN.js"></script>
  <script src="https://cdn.theblack.cat/resources/scripts/gallery-selector-jpn.js"></script>
  <script>
-   document.getElementById('commworks-topBar').onclick = function() {    window.location.href = 'https://skeb.theblack.cat';};
- </script>
+  document.getElementById('gdrive-folder').onclick = function() {
+  window.open('https://drive.google.com/drive/folders/1ZJHz9vsFuKKi5H_B6bSiw-6-CZsrYXlA?usp=drive_link', '_blank');
+  };
+</script>
 <!-- ~~~~ --> 
 </body>
 </html>
