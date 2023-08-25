@@ -131,6 +131,18 @@ const galleries = [
   },
 
   {
+    name: '"Spun Sugar" - ハイプラットフォームサンダル',
+    url_id: 'spun-sugar',
+    download_icon: '&nbsp<a href="https://drive.google.com/drive/folders/1nwOkBs3IwD1krj7MbEIp5YPN7OkX8XTV?usp=drive_link" target="_blank"><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/colordrive.svg" width="22" height="22" class="selector-drive" style="right:1px";>&nbsp;</a>',  
+    images: [
+      { src: 'https://cdn.theblack.cat/gallery/attires/accessories/spun-sugar/1.png', tags: 'Footwear' },
+      { src: 'https://cdn.theblack.cat/gallery/attires/accessories/spun-sugar/2.png', tags: 'Footwear' },
+      { src: 'https://cdn.theblack.cat/gallery/attires/accessories/spun-sugar/3.png', tags: 'Footwear' },
+
+    ],
+  },  
+
+  {
     name: 'ウィング・イヤースタッド',
     url_id: 'wing-earring',
     download_icon: '&nbsp<a href="https://drive.google.com/drive/folders/1TlXUiVlmBmdRwt3ypOFtJZ_NPuCd3Awh?usp=sharing" target="_blank"><img src="https://cdn.theblack.cat/resources/thank-you-flaticons/colordrive.svg" width="22" height="22" class="selector-drive" style="right:1px";>&nbsp;</a>',  
